@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<html lang="es">
+<head>
     <meta charset="UTF-8">
-    <title>PALION ARTS | ZUNARIS • OSYNT</title>
+    <title>PALIONT ARTS | ZUNARIS • OSYNT</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         :root {
@@ -51,26 +51,12 @@
             gap: 1.5rem;
         }
 
-        .brand {
-            display: flex;
-            align-items: center;
-            gap: 0.9rem;
-        }
-
-        .logo {
-            width: 40px;
-            height: 40px;
-            border-radius: 999px;
-            background: radial-gradient(circle at 30% 30%, #38bdf8, #0f172a 55%, #020617 100%);
-            border: 1px solid rgba(148,163,184,0.7);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 0 18px rgba(56,189,248,0.7);
-            font-size: 0.8rem;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-            color: var(--text-main);
+        /* LOGO NUEVO */
+        .logo-img {
+            width: 75px;
+            height: auto;
+            object-fit: contain;
+            filter: drop-shadow(0 0 12px rgba(56,189,248,0.55));
         }
 
         .brand-text h1 {
@@ -149,11 +135,6 @@
             color: var(--text-muted);
             max-width: 40rem;
             margin-bottom: 1.4rem;
-        }
-
-        .hero-highlight {
-            font-style: italic;
-            color: var(--text-main);
         }
 
         .pill-row {
@@ -238,258 +219,197 @@
             letter-spacing: 0.18em;
             font-size: 0.7rem;
         }
-
-        @media (max-width: 720px) {
-            .header-inner {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-            nav ul {
-                flex-wrap: wrap;
-                justify-content: flex-start;
-            }
-            .hero h2 {
-                font-size: 1.6rem;
-            }
-            section {
-                padding: 1.6rem 1.2rem;
-            }
-        }
-/* HERO HOME */
-.hero-home {
-    padding: 4rem 1rem;
-    text-align: center;
-    background: radial-gradient(circle at top, rgba(56,189,248,0.12), transparent 60%);
-}
-
-.hero-home h2 {
-    font-size: 2.2rem;
-    margin-bottom: 0.8rem;
-}
-
-.hero-home h2 span {
-    color: var(--accent);
-}
-
-.hero-subtitle {
-    max-width: 40rem;
-    margin: 0 auto 1.5rem;
-    color: var(--text-muted);
-}
-
-.hero-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 1rem;
-}
-
-/* BUTTONS */
-.btn-primary,
-.btn-secondary {
-    padding: 0.6rem 1.2rem;
-    border-radius: 999px;
-    text-decoration: none;
-    font-size: 0.85rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    transition: 0.2s ease;
-}
-
-.btn-primary {
-    background: var(--accent);
-    color: #000;
-}
-
-.btn-primary:hover {
-    background: var(--accent-soft);
-}
-
-.btn-secondary {
-    border: 1px solid var(--accent-soft);
-    color: var(--accent-soft);
-}
-
-.btn-secondary:hover {
-    background: rgba(125,211,252,0.1);
-}
-
-/* CREATOR */
-.creator {
-    text-align: center;
-    margin-top: 3rem;
-}
-
-/* GALLERY */
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: 1rem;
-    margin: 1.5rem 0;
-}
-
-.gallery-item {
-    height: 120px;
-    background: rgba(148,163,184,0.1);
-    border: 1px solid rgba(148,163,184,0.2);
-    border-radius: 0.6rem;
-}
-
-/* CTA FINAL */
-.cta-final {
-    text-align: center;
-    padding: 3rem 1rem;
-    background: radial-gradient(circle at bottom, rgba(56,189,248,0.12), transparent 60%);
-}
     </style>
 </head>
+
 <body>
 
 <header>
     <div class="container header-inner">
         <div class="brand">
-            <div class="logo">PA</div>
-            <!-- Aquí puedes reemplazar el círculo por tu logo fusionado como imagen:
-                 <img src="logo-fusionado.png" alt="Logo PALIONT ARTS" class="logo-img"> -->
+            <img src="Copilot_20260205_234151.png" alt="Logo PALIONT ARTS" class="logo-img">
             <div class="brand-text">
-                <h1>PALION ARTS</h1>
-                <span>ZUNARIS • OSYNT • CREATIVE UNIVERSE</span>
+                <h1>PALIONT ARTS</h1>
+                <span>ZUNARIS • OSYNT • UNIVERSO CREATIVO</span>
             </div>
         </div>
+
         <nav>
             <ul>
-                <li><a href="#inicio">Start</a></li>
+                <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#zunaris">Zunaris</a></li>
-                <li><a href="#palion">Palion Arts</a></li>
+                <li><a href="#paliont">Paliont Arts</a></li>
                 <li><a href="#osynt">Osynt</a></li>
             </ul>
         </nav>
     </div>
 </header>
- <main class="container">
 
-<section id="inicio"></section>
+<main class="container">
 
-    <!-- HERO PRINCIPAL -->
-    <section class="hero-home">
-        <div class="hero-content">
-            <h2>Where stories <span>breathe differently</span>.</h2>
-            <p class="hero-subtitle">
-                A universe where time fractures, fear whispers and the future observes.
-                Three worlds. One vision.
-            </p>
-            <div class="hero-buttons">
-                <a href="#universo" class="btn-primary">Enter the Universe</a>
-                <a href="#zunaris" class="btn-secondary">Explore ZUNARIS</a>
-            </div>
-        </div>
-    </section>
+    <!-- HERO -->
+    <section id="inicio" class="hero">
+        <div class="hero-kicker">Universo creativo de Osiris Palacios</div>
+        <h2>Donde las historias <span>se sienten vivas</span>.</h2>
 
-    <!-- PRESENTACIÓN DEL CREADOR -->
-    <section class="creator">
-        <h3>Osiris Palacios Zúñiga</h3>
-        <p class="muted">
-            Multidisciplinary creator, visual narrator and world architect.
-            My work combines epic fantasy, emotional horror and futuristic science fiction
-            to build stories that seek to stay with you long after having lived them.
+        <p class="hero-subtitle">
+            PALIONT ARTS es el núcleo de un universo narrativo donde convergen tres líneas creativas:
+            fantasía épica, terror psicológico y ciencia ficción futurista. Este sitio es el portal hacia esos mundos.
         </p>
-        <a href="#sobre-mi" class="btn-secondary">Know more</a>
+
+        <p>
+            Aquí no buscamos solo contar historias, sino construir experiencias que acompañen, perturben,
+            inspiren y permanezcan contigo mucho después de haber cerrado la página.
+        </p>
+
+        <div class="pill-row">
+            <div class="pill">ZUNARIS · Fantasía épica</div>
+            <div class="pill">PALIONT ARTS · Terror y suspenso</div>
+            <div class="pill">OSYNT · Ciencia ficción y futuros posibles</div>
+        </div>
+
+        <h3 style="margin-top:1.6rem;">Manifiesto creativo</h3>
+        <p>
+            En un mundo saturado de ruido, PALIONT ARTS existe para recordarte que las historias aún pueden
+            estremecer. No buscamos asustar por asustar, sino despertar emociones profundas, explorar
+            lo desconocido y revelar lo que se oculta detrás de cada sombra.
+        </p>
+        <p>
+            Cada proyecto, cada marca, cada historia nace de una misma raíz:
+            la necesidad de crear mundos que se sientan reales, intensos y memorables.
+        </p>
     </section>
 
-    <!-- TRES MARCAS -->
-    <section id="universo" class="brands">
-        <h3>Three paths, the same origin</h3>
+    <!-- ZUNARIS -->
+    <section id="zunaris">
+        <span class="tag">Zunaris · Fantasía épica</span>
+        <h3>ZUNARIS — El corazón del universo creativo</h3>
 
+        <p>
+            ZUNARIS es el proyecto más ambicioso del universo creativo. Un mundo vasto, antiguo
+            y lleno de secretos, donde la magia no es un don, sino una responsabilidad.
+        </p>
+
+        <h4>Misión de la marca</h4>
+        <p>
+            Crear un universo de fantasía profundo, coherente y emocional, capaz de expandirse a novelas,
+            ilustraciones, animación y experiencias transmedia.
+        </p>
+
+        <h4>Texto narrativo introductorio</h4>
+        <p>
+            En ZUNARIS, la luz y la oscuridad no son fuerzas opuestas, sino reflejos de una misma verdad.
+            Los héroes no nacen: se forjan. Las leyendas no se cuentan: se viven. Y el mundo no espera… cambia.
+        </p>
+
+        <h4>Elementos clave</h4>
         <div class="grid-3">
             <div class="card">
-                <h4>ZUNARIS</h4>
-                <p class="muted">Epic fantasy of broken time.</p>
-                <a href="#zunaris" class="btn-primary">Entering the world</a>
+                <span class="tag">Lore</span>
+                <p>Magia antigua, sistemas místicos y una historia que se construye capa por capa.</p>
             </div>
-
             <div class="card">
-                <h4>PALION ARTS</h4>
-                <p class="muted">Emotional, supernatural and atmospheric terror.</p>
-                <a href="#palion" class="btn-primary">Explore the fear</a>
+                <span class="tag">Mundos</span>
+                <p>Reinos con culturas propias, conflictos políticos y mitologías entrelazadas.</p>
             </div>
-
             <div class="card">
-                <h4>OSYNT</h4>
-                <p class="muted">Science fiction and possible futures.</p>
-                <a href="#osynt" class="btn-primary">See the futures</a>
+                <span class="tag">Personajes</span>
+                <p>Protagonistas complejos, decisiones difíciles y evolución real a lo largo de la historia.</p>
             </div>
         </div>
     </section>
 
-    <!-- HISTORIA DESTACADA -->
-    <section class="featured-story">
-        <h3>ZUNARIS — The echo of time</h3>
-        <p class="muted">
-            The story of Nara, a girl who discovers that time is hurt.
-            Together with Trikon and Klok, he embarks on a journey to rebuild what sustains his world.
+    <!-- PALIONT ARTS -->
+    <section id="paliont">
+        <span class="tag tag-danger">Paliont Arts · Terror y suspenso</span>
+        <h3>PALIONT ARTS — La forma del miedo</h3>
+
+        <p>
+            PALIONT ARTS explora el miedo desde una perspectiva emocional y psicológica.
+            Aquí, el terror no es un susto: es una presencia. Una sombra que te acompaña incluso
+            cuando cierras el libro o apagas la pantalla.
         </p>
-        <div class="hero-buttons">
-            <a href="#zunaris" class="btn-primary">Read the story</a>
-            <a href="#personajes" class="btn-secondary">View characters</a>
-        </div>
-    </section>
 
-    <!-- GALERÍA DESTACADA -->
-    <section class="gallery-preview">
-        <h3>The Universe in Pictures</h3>
-        <div class="gallery-grid">
-            <div class="gallery-item"></div>
-            <div class="gallery-item"></div>
-            <div class="gallery-item"></div>
-            <div class="gallery-item"></div>
-            <div class="gallery-item"></div>
-            <div class="gallery-item"></div>
-        </div>
-        <a href="#galeria" class="btn-secondary">Ver galería completa</a>
-    </section>
-
-    <!-- PORTAL NARRATIVO -->
-    <section class="lore-portal">
-        <h3>Explora el Lore</h3>
-        <p class="muted">
-            Descubre los secretos del tiempo roto, la grieta, los guardianes y el origen de Nara.
+        <h4>Misión de la marca</h4>
+        <p>
+            Crear historias de terror y suspenso que conecten con los temores más profundos del ser humano,
+            desde lo sobrenatural hasta lo cotidiano.
         </p>
-        <a href="#lore" class="btn-primary">Entrar al Lore</a>
-    </section>
 
-    <!-- ÚLTIMAS PUBLICACIONES -->
-    <section class="latest">
-        <h3>Lo más reciente del universo</h3>
+        <h4>Texto narrativo introductorio</h4>
+        <p>
+            Hay lugares que no deberían visitarse.  
+            Hay recuerdos que no deberían despertarse.  
+            Hay verdades que no deberían conocerse.  
+            PALIONT ARTS te invita a cruzar ese umbral… bajo tu propio riesgo.
+        </p>
+
+        <h4>Elementos clave</h4>
         <div class="grid-3">
-            <div class="card small-card"></div>
-            <div class="card small-card"></div>
-            <div class="card small-card"></div>
+            <div class="card">
+                <span class="tag tag-danger">Terror psicológico</span>
+                <p>Miedos internos, culpas, traumas y aquello que no queremos enfrentar.</p>
+            </div>
+            <div class="card">
+                <span class="tag tag-danger">Suspenso</span>
+                <p>Historias que avanzan lentamente, construyendo tensión escena a escena.</p>
+            </div>
+            <div class="card">
+                <span class="tag tag-danger">Límites</span>
+                <p>Personajes atrapados entre la realidad y lo desconocido, sin respuestas fáciles.</p>
+            </div>
         </div>
-        <a href="#novedades" class="btn-secondary">Ver más</a>
     </section>
 
-    <!-- CTA FINAL -->
-    <section class="cta-final">
-        <h3>Únete al viaje</h3>
-        <p class="muted">
-            Este universo apenas comienza. Acompáñame mientras lo construimos juntos.
+    <!-- OSYNT -->
+    <section id="osynt">
+        <span class="tag">Osynt · Ciencia ficción y futurismo</span>
+        <h3>OSYNT — Futuros posibles</h3>
+
+        <p>
+            OSYNT mira hacia adelante. Explora futuros posibles, tecnologías emergentes
+            y los dilemas éticos que acompañan a la evolución humana.
         </p>
-        <div class="hero-buttons">
-            <a href="#contacto" class="btn-primary">Contacto</a>
-            <a href="#redes" class="btn-secondary">Seguir en redes</a>
+
+        <h4>Misión de la marca</h4>
+        <p>
+            Crear historias de ciencia ficción que combinen rigor conceptual, emoción humana
+            y escenarios futuristas creíbles.
+        </p>
+
+        <h4>Texto narrativo introductorio</h4>
+        <p>
+            El futuro no es un destino… es una consecuencia.  
+            Cada avance, cada decisión, cada descubrimiento nos acerca a un mundo nuevo.  
+            OSYNT imagina esos mundos, y te invita a explorarlos.
+        </p>
+
+        <h4>Elementos clave</h4>
+        <div class="grid-3">
+            <div class="card">
+                <span class="tag">Tecnología</span>
+                <p>Inteligencia artificial, interfaces avanzadas, biotecnología y sistemas complejos.</p>
+            </div>
+            <div class="card">
+                <span class="tag">Sociedad</span>
+                <p>Distopías, utopías y estructuras sociales que emergen de nuevos contextos.</p>
+            </div>
+            <div class="card">
+                <span class="tag">Ética</span>
+                <p>Dilemas morales sobre control, libertad, identidad y humanidad en mundos futuros.</p>
+            </div>
         </div>
     </section>
 
 </main>
+
 <footer>
     <div class="footer-inner">
         <span>Creado por Osiris Palacios Zúñiga</span>
-        <p>Universo creativo independiente · ZUNARIS · PALION ARTS · OSYNT</p>
+        <p>Universo creativo independiente · ZUNARIS · PALIONT ARTS · OSYNT</p>
         <p>Todos los derechos reservados.</p>
     </div>
 </footer>
 
-
-
-
-</body></html>
+</body>
+</html>
