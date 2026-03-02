@@ -180,9 +180,9 @@ nav a:hover {
 }
 
 /* FONDOS */
-.zunaris { background-image: url("Klok.png"); }
-.palion { background-image: url("Frame 6 el cuervo.png"); }
-.osynt { background-image: url("Frame 2 sync.png"); }
+.zunaris { background-image: url("klok.png"); }
+.palion { background-image: url("frame-6-el-cuervo.png"); }
+.osynt { background-image: url("frame-2-sync.png"); }
 
 /* BOTONES */
 .btn-primary {
