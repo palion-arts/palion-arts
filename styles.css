@@ -332,10 +332,24 @@ section a.btn-secondary {
         padding-bottom: 0.5rem;
     }
 
-    body {
+    body {body {
+    font-family: var(--font-main);
+    background: radial-gradient(circle at top, var(--cine-purple), #0a0a12 55%, #000 100%);
+    color: var(--text-main);
+    line-height: 1.6;
+    padding-top: 70px;
+}
+
+/* NORMALIZAR TEXTO EN XIAOMI/REDMI */
+html, body {
+    -webkit-text-size-adjust: 100% !important;
+    text-size-adjust: 100% !important;
+}
+
         padding-top: 60px;
     }
 }
+
 
 
 
