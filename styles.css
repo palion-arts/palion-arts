@@ -40,7 +40,15 @@ body {
     border-bottom: 1px solid rgba(255,255,255,0.08);
     box-shadow: 0 4px 18px rgba(0,0,0,0.25);
 }
+.main-header {
+    width: 100%;
+}
 
+.main-header .container {
+    max-width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
 .main-header .container {
     max-width: 1080px;
     margin: 0 auto;
@@ -315,3 +323,4 @@ section a.btn-secondary {
         padding-top: 60px;
     }
 }
+
