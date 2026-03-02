@@ -49,11 +49,6 @@ body {
     padding-left: 1rem;
     padding-right: 1rem;
 }
-.main-header .container {
-    max-width: 1080px;
-    margin: 0 auto;
-    padding: 1.25rem 1rem;
-}
 
 nav a:hover {
     color: var(--accent-strong);
@@ -323,4 +318,5 @@ section a.btn-secondary {
         padding-top: 60px;
     }
 }
+
 
