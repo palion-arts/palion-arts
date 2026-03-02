@@ -266,6 +266,14 @@ section a.btn-secondary {
     transition: 0.25s ease;
     box-shadow: 0 0 18px rgba(120,70,255,0.15);
 }
+.nara-hero-img {
+    width: 320px;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
 
 .character-card:hover {
     transform: translateY(-6px);
