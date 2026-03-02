@@ -25,20 +25,32 @@ body {
     background: radial-gradient(circle at top, var(--cine-purple), #0a0a12 55%, #000 100%);
     color: var(--text-main);
     line-height: 1.6;
-    padding-top: 70px; /* evita que el header tape el contenido */
+    padding-top: 70px;
 }
 
-/* HEADER CINEMATOGRÁFICO */
+/* HEADER CINEMATOGRÁFICO F1 — ESTILO D */
 .main-header {
     position: sticky;
     top: 0;
     z-index: 100;
     width: 100%;
-    background: rgba(10, 10, 20, 0.45);
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
-    border-bottom: 1px solid rgba(255,255,255,0.08);
-    box-shadow: 0 4px 18px rgba(0,0,0,0.25);
+    background: rgba(10, 10, 20, 0.35);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border-bottom: 1px solid rgba(120,70,255,0.25);
+    box-shadow:
+        0 0 22px rgba(120,70,255,0.25),
+        0 0 32px rgba(56,189,248,0.18),
+        inset 0 0 18px rgba(120,70,255,0.15);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.main-header.scrolled {
+    background: rgba(10, 10, 20, 0.55);
+    box-shadow:
+        0 0 28px rgba(120,70,255,0.35),
+        0 0 38px rgba(56,189,248,0.25),
+        inset 0 0 22px rgba(120,70,255,0.25);
 }
 
 /* Contenedor del header */
@@ -50,30 +62,21 @@ body {
 }
 
 /* FIX PARA XIAOMI / REDMI / MIUI */
-/* Si el navegador NO soporta backdrop-filter correctamente (caso Xiaomi), usa un fondo sólido */
 @supports not ((-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px))) {
     .main-header {
-        background: rgba(10, 10, 20, 0.85); /* fallback sólido que NO se corta */
+        background: rgba(10, 10, 20, 0.85);
         -webkit-backdrop-filter: none;
         backdrop-filter: none;
     }
 }
 
-/* Si SÍ soporta blur (todos los demás dispositivos), usa el efecto cinematográfico */
 @supports ((-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px))) {
     .main-header {
-        background: rgba(10, 10, 20, 0.45);
-        -webkit-backdrop-filter: blur(14px);
-        backdrop-filter: blur(14px);
+        background: rgba(10, 10, 20, 0.35);
+        -webkit-backdrop-filter: blur(18px);
+        backdrop-filter: blur(18px);
     }
 }
-
-nav a:hover {
-    color: var(--accent-strong);
-    border-color: var(--accent-strong);
-}
-
-/* ELIMINADO: header { ... } duplicado */
 
 /* HEADER BASE */
 .header-inner {
@@ -89,10 +92,17 @@ nav a:hover {
     height: 78px;
     border-radius: 50%;
     object-fit: cover;
-    border: 2px solid #4b5563;
+    border: 2px solid rgba(120,70,255,0.55);
     box-shadow:
-        0 0 22px rgba(56,189,248,0.9),
-        0 0 32px rgba(56,189,248,0.55);
+        0 0 22px rgba(120,70,255,0.55),
+        0 0 32px rgba(56,189,248,0.35);
+    transition: 0.3s ease;
+}
+
+.logo-img:hover {
+    box-shadow:
+        0 0 28px rgba(120,70,255,0.75),
+        0 0 42px rgba(56,189,248,0.45);
 }
 
 .brand-text h1 {
@@ -109,6 +119,7 @@ nav a:hover {
     text-transform: uppercase;
 }
 
+/* MENÚ CINEMATOGRÁFICO */
 nav ul {
     list-style: none;
     display: flex;
@@ -123,7 +134,13 @@ nav a {
     text-decoration: none;
     padding-bottom: 0.2rem;
     border-bottom: 1px solid transparent;
-    transition: 0.2s ease;
+    transition: 0.25s ease;
+}
+
+nav a:hover {
+    color: var(--accent-strong);
+    border-color: var(--accent-strong);
+    text-shadow: 0 0 12px rgba(56,189,248,0.55);
 }
 
 /* SECCIONES */
