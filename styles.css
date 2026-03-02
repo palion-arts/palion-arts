@@ -1,6 +1,4 @@
-:root}
-
-{
+:root{
     --bg-main: #06060a;
     --bg-section: #0b0b12;
     --accent: #7dd3fc;
@@ -338,6 +336,7 @@ section a.btn-secondary {
         padding-top: 60px;
     }
 }
+
 
 
 
