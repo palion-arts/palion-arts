@@ -1,18 +1,4 @@
-:root
-/* NORMALIZACIÓN DEL VIEWPORT PARA XIAOMI/REDMI */
-html {
-    transform: scale(1);
-    transform-origin: top left;
-    width: 100vw;
-    max-width: 100%;
-    overflow-x: hidden;
-}
-
-/* Evita que MIUI fuerce zoom o escalas internas */
-body {
-    -webkit-text-size-adjust: 100%;
-    text-size-adjust: 100%;
-}
+:root}
 
 {
     --bg-main: #06060a;
@@ -352,6 +338,7 @@ section a.btn-secondary {
         padding-top: 60px;
     }
 }
+
 
 
 
