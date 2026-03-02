@@ -1,0 +1,290 @@
+:root {
+    --bg-main: #06060a;
+    --bg-section: #0b0b12;
+    --accent: #7dd3fc;
+    --accent-strong: #2dd4ff;
+    --text-main: #f9fafb;
+    --text-muted: #9ca3af;
+    --danger: #f97373;
+    --font-main: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+    /* Colores cinematográficos F1 */
+    --cine-purple: rgba(120, 70, 255, 0.25);
+    --cine-blue: rgba(56, 189, 248, 0.22);
+}
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    background: radial-gradient(circle at top, var(--cine-purple), #0a0a12 55%, #000 100%);
+    color: var(--text-main);
+    line-height: 1.6;
+}
+
+/* HEADER CINEMATOGRÁFICO */
+.main-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(10, 10, 20, 0.45);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    box-shadow: 0 4px 18px rgba(0,0,0,0.25);
+}
+
+nav a:hover {
+    color: var(--accent-strong);
+    border-color: var(--accent-strong);
+}
+
+/* HEADER BASE */
+header {
+    background: linear-gradient(to right, rgba(20,20,35,0.9), rgba(10,10,20,0.85));
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 1.25rem 1rem;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+/* LOGO */
+.logo-img {
+    width: 78px;
+    height: 78px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #4b5563;
+    box-shadow:
+        0 0 22px rgba(56,189,248,0.9),
+        0 0 32px rgba(56,189,248,0.55);
+}
+
+.brand-text h1 {
+    font-size: 1.1rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
+.brand-text span {
+    display: block;
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.2rem;
+    font-size: 0.85rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+nav a {
+    color: var(--text-muted);
+    text-decoration: none;
+    padding-bottom: 0.2rem;
+    border-bottom: 1px solid transparent;
+    transition: 0.2s ease;
+}
+
+/* SECCIONES */
+main {
+    padding: 2.5rem 1rem 3.5rem;
+}
+
+section {
+    margin-bottom: 3rem;
+    padding: 2rem 1.5rem;
+    border-radius: 1rem;
+    background:
+        radial-gradient(circle at top left, var(--cine-blue), transparent 55%),
+        radial-gradient(circle at bottom right, var(--cine-purple), transparent 55%),
+        var(--bg-section);
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+/* HERO */
+.hero-home {
+    text-align: center;
+    padding: 4rem 1.5rem;
+    background:
+        radial-gradient(circle at center, rgba(120,70,255,0.25), transparent 70%),
+        radial-gradient(circle at bottom, rgba(56,189,248,0.18), transparent 80%);
+}
+
+.hero-home h2 {
+    font-size: 2.2rem;
+    margin-bottom: 0.8rem;
+}
+
+.hero-home h2 span {
+    color: var(--accent-strong);
+}
+
+.hero-subtitle {
+    font-size: 1rem;
+    color: var(--accent);
+    max-width: 40rem;
+    margin: 0 auto 2.2rem;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.4rem;
+    margin-top: 2.8rem;
+}
+
+/* BOTONES */
+.btn-primary,
+.btn-secondary {
+    padding: 0.7rem 1.4rem;
+    border-radius: 0.6rem;
+    text-decoration: none;
+    font-size: 0.9rem;
+    letter-spacing: 0.05em;
+    transition: 0.2s ease;
+}
+
+.btn-primary {
+    background: linear-gradient(to right, #3b82f6, #8b5cf6);
+    color: white;
+    box-shadow: 0 0 18px rgba(120,70,255,0.45);
+}
+
+.btn-primary:hover {
+    box-shadow: 0 0 28px rgba(120,70,255,0.65);
+    border-color: var(--accent-strong);
+    color: var(--accent-strong);
+}
+
+.btn-secondary {
+    border: 1px solid rgba(255,255,255,0.2);
+    color: white;
+}
+
+.btn-secondary:hover {
+    box-shadow: 0 0 28px rgba(120,70,255,0.65);
+    border-color: var(--accent-strong);
+    color: var(--accent-strong);
+}
+
+/* GRID */
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 1.2rem;
+    margin-top: 1rem;
+}
+
+section a.btn-primary,
+section a.btn-secondary {
+    margin-top: 1.4rem;
+    display: inline-block;
+}
+
+/* TARJETAS */
+.card {
+    padding: 1rem;
+    border-radius: 0.9rem;
+    background: rgba(20,20,35,0.7);
+    border: 1px solid rgba(255,255,255,0.05);
+    box-shadow: 0 0 18px rgba(120,70,255,0.15);
+}
+
+.card p {
+    margin-bottom: 1.5rem;
+}
+
+/* === GALERÍA FINAL — SIN RECORTES === */
+.gallery-preview .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.gallery-preview .gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.8rem;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.08);
+    box-shadow: 0 0 18px rgba(120,70,255,0.25);
+}
+
+.gallery-preview .gallery-item img {
+    width: 100%;
+    height: auto;
+    max-height: 260px;
+    object-fit: contain;
+    transition: 0.35s ease;
+    opacity: 0;
+    animation: fadeIn 0.8s ease forwards;
+}
+
+.gallery-preview .gallery-item:hover img {
+    transform: scale(1.05);
+    filter: brightness(1.15);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(1.02); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/* TARJETAS DE PERSONAJES */
+.character-card {
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.06);
+    text-align: center;
+    transition: 0.25s ease;
+    box-shadow: 0 0 18px rgba(120,70,255,0.15);
+}
+
+.character-card:hover {
+    transform: translateY(-6px);
+    box-shadow:
+        0 0 22px rgba(120,70,255,0.35),
+        0 0 32px rgba(56,189,248,0.25);
+    border-color: rgba(56,189,248,0.45);
+}
+
+.character-img {
+    width: 100%;
+    height: auto;
+    max-height: 260px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+    filter: drop-shadow(0 0 12px rgba(56,189,248,0.35));
+}
+
+/* ESPACIO BAJO EL HEADER */
+main.container {
+    padding-top: 3.5rem;
+}
